@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header .container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 8px 0;
+    background-color: goldenrod;
+    margin-bottom: 32px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+h1 {
+    font-style: italic;
+    color: white;
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+section img {
+    max-width: 240px;
+    padding-right: 16px;
+    margin-bottom: 54px;
+}
+
+h2 {
+    border-bottom: 1px solid goldenrod;
+    display: block;
+    padding-bottom: 5px;
+    max-width: 1024px;
+    width: 100%;
+}
+
+section h2 {
+    margin-bottom: 32px;
+    color: goldenrod;
+}
+
+.sobre {
+    margin-bottom: 72px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 28%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.produtos img {
+    max-width: 200px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+.produtos li {
+    list-style: none;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produtos li h3 {
+    margin: 16px 0;
+}
+
+button {
+    display: block;
+    width: 90%;
+    padding: 8px 0;
+    border: none;
+    background-color:goldenrod;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        max-width: 1023px;
+        margin: 0 auto;
+    }
+
+    header .container {
+        width: 90%;
+        max-width: none;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header {
+        padding: 8px 0;
+        background-color: goldenrod;
+        margin-bottom: 32px;
+    }
+    
+    h1 {
+        font-style: italic;
+        color: white;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    justify-content: center;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        max-width: 100%;
+        align-items: center;
+        padding-right: 0px;
+        margin-bottom: 54px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+}
